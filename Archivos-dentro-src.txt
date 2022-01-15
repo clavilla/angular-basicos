@@ -1,0 +1,211 @@
+Ok, enfoquémonos en la carpeta source, ábranla ahora la carpeta app y dentro de app ustedes van a
+
+ver aquí nuestro app component.
+
+Punto html.
+
+Hagan doble clic y van a ver un montón de código html.
+
+Acá hay unos estilos, bajan un poco más, van a ver que aquí ya viene todo el HTML propiamente, que
+
+es lo que construye esta página.
+
+Les voy a pedir que seleccionen todos, escriban con bueno, toquen controlÃ o Koman a Borren lo pongan
+
+una etiqueta H1 Hola mundo Graven los cambios regresen al navegador web y van a ver que aquí ya aparece
+
+el Hola Mundo!
+
+Recuerden que para que aparezca el Hola Mundo ustedes tienen que tener corriendo la aplicación del Engineer
+
+en la terminal.
+
+Siempre tienen que tenerlo arriba porque estamos en modo de desarrollo.
+
+Ok, bien, eso es genial porque rápidamente nosotros vemos los cambios y eso se mantiene.
+
+Eso es súper útil para una programación rápida.
+
+Ok, voy a cerrarlo por momentos.
+
+Quiero que noten que aquí tenemos el ah component.
+
+Punto html add component puntos css a component punto speck punto ts y a component punto ts.
+
+Estos cuatro archivos realmente hacen relación a el mismo objetivo que es un componente es el app compone
+
+el componente de mi aplicación.
+
+Usualmente este es el punto inicial de la misma.
+
+Ya vamos a explicar como hacer otros cambios, cambiar rutas, entre otras cosas.
+
+Pero podemos ver que aquí tenemos un punto CSS.
+
+Esto quiere decir que estos son los estilos que se van a aplicar únicamente al app, un punto HTML o
+
+al componente propiamente.
+
+Y esto es genial porque Angular les da a ustedes el poder de hacer CSS encapsulado, lo cual es genial
+
+porque si tuviéramos algo que sólo se debe aplicar en este HTML, lo podemos hacer en este archivo.
+
+Aquí sólo vamos a explicar generalidades ya de cada uno de los archivos y directorios que tenemos acá.
+
+Los puntos HTML obviamente es lo que el usuario está viendo.
+
+Ya hicimos la modificación.
+
+Los punto expect punto TS están relacionados a pruebas.
+
+Aquí ya pone mucho código por defecto, pero realmente nosotros no vamos a tocar esto.
+
+Los puntos specs son chew de pruebas.
+
+En este caso lo podríamos borrar si ustedes quieren sin ningún problema.
+
+Luego tenemos el punto TS en la pospone el punto TE que ya esto es una clase de TypeScript.
+
+Antes de que cunda el pánico, esto lo vamos a hablar más en el próximo video, pero si ustedes borraran
+
+todo eso, no hace falta que lo hagan, solo es una demostración.
+
+Lo que tenemos aquí es una simple clase ok que tiene un decorador y ese decorador es importado de aquí.
+
+Esto lo voy a hablar en la próxima clase.
+
+Sólo estoy enfocándome en los archivos aquí.
+
+Luego tenemos el app punto módulo el a Pepe punto módulo nuevamente déjenme borrar todo esto.
+
+Es otra clase común y corriente como ustedes pueden ver, pero tienen un decorador especial.
+
+El app component podría mentalizarse que es su aplicación en general.
+
+Aquí estarían los módulos que componen la misma.
+
+Aquí tendríamos un módulo de producto o su medio módulo de cliente, su módulo de autenticación.
+
+Eso va a tener más sentido conforme avancemos, pero esa parte de los módulos podemos verlo como un
+
+agrupado OK.
+
+Luego tenemos la parte de los assets.
+
+Los assets son utilizados para colocar recursos estáticos en nuestra aplicación.
+
+Usualmente van a ser imágenes, pueden ser sonidos o cosas que realmente no tienen que compilar o traducirse
+
+a JavaScript.
+
+Luego tenemos dos environment.
+
+Si esos dos son archivos bastante útiles, porque angulas de manera automática nos permite a nosotros
+
+tener un lugar para nuestras variables de entorno, ya sea de desarrollo y de producción.
+
+Este es de desarrollo.
+
+Noten el environment punto TS es de desarrollo y aquí dice producción en fols.
+
+Y luego tenemos el environment punto prod que es el de producción que tiene esta banderita que dice
+
+production entro.
+
+Eso lo vamos a utilizar más adelante en el curso, pero es genial porque así nosotros podemos tener
+
+la misma aplicación, estas desarrollándola en desarrollo valga la redundancia y luego pues simplemente
+
+tener un muelle que apunte al servidor real y angular lo va a hacer todo por nosotros cuando lo compilamos
+
+a producción.
+
+Luego tenemos el FAP Eikon, que es el icono que está apareciendo aquí arriba.
+
+Nada del otro mundo.
+
+Luego tenemos el index punto HTML, que es la página que nosotros estamos viendo ya, como a nivel macro
+
+lo podríamos analizar acá.
+
+Déjenme ocultar esta barra.
+
+Vamos a ver si la puedo poner de tal manera que se pueda ver esto mejor.
+
+Aquí tenemos toda esa aplicación que está aquí.
+
+Es lo que estamos viendo acá.
+
+Ustedes podrían ponerle bases, bases de Angular, grabar los cambios, regresar a la aplicación y aquí
+
+arriba dice bases de Angular.
+
+Noten, aquí hay un par de cosas que se inyectan de manera automática.
+
+Por ejemplo, que ustedes van a notar que aquí lo único que está es el app root, que está en la aplicación
+
+de Angular, que estamos renderizado aquí adentro, pero no hay ningún script.
+
+Esos es que están apareciendo mágicamente hoy, así por ahora están apareciendo acá, el cual contiene
+
+la aplicación de Angular con un bueno contiene el framework de Angular, contiene lo que nosotros ocupamos
+
+para correr.
+
+La aplicación por ahora cambia un poco cuando ya lo generemos a producción.
+
+Ok.
+
+Luego tenemos el main punto TS, que usualmente esto nunca se toca.
+
+Esto ayuda a básicamente a decirle a Angular el ambiente en el que está corriendo.
+
+Podemos correrlo, ya sea por ejemplo, si estuviéramos utilizando el Native Script, no estaríamos
+
+utilizando el Platform Browser dinámicos a quien no quiero que lo renderiza para un navegador web,
+
+pero esto varía dependiendo de el target que ustedes tengan para sus aplicaciones de Angular.
+
+Usualmente esto nunca lo van a modificar.
+
+Noten que aquí también dice hay una pequeña bandera que dice que si el embaro es de producción, esto
+
+se hace una importación de los environment.
+
+Si están pro-ducción, entonces habilita cierta compilación o traducción a la hora de estar en producción.
+
+Luego tenemos dos poli fills que la verdad aquí lo que ayuda es para tener una mayor compatibilidad
+
+con otros navegadores web.
+
+Usualmente ustedes nunca van a tocar eso de los poli files a menos de que sea estrictamente necesario
+
+que necesiten que algo funcione en un navegador web muy viejo.
+
+Entonces ahí añade los policías.
+
+Luego tenemos el esta Helesponto CSS, que es un archivo de estilos global en su aplicación.
+
+Inclusive aquí les dan un comentario.
+
+Lo que ustedes escriben acá va a ser CSS, que se aplica a nivel general en toda la aplicación.
+
+Recuerden, a diferencia del ABC compone el punto CSS, este CSS sólo se aplicaría a la component.
+
+HTML o al temple que se coloca aquí adentro, que ya lo vamos a ver también.
+
+Pero este CSS se aplica a nivel general y luego este de los test es básicamente la configuración ya
+
+de nuestro ambiente de pruebas.
+
+La verdad, nosotros no vamos a tocar esta parte tampoco en este curso, pero si nos vamos a enfocar
+
+en crear varias aplicaciones completas aquí en este curso de Angular.
+
+Por los momentos ya hemos hablado sobre cada uno de los directorios archivos que teníamos en una aplicación
+
+de Angular.
+
+Es momento ya, ahora sí, ya se dio toda la introducción.
+
+Es momento de empezar a trabajar con Angular propiamente y eso en el próximo video.
